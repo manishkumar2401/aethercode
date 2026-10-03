@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Engines & Products Suite | AethercodeTech</title>
+  <meta name="description"
+    content="Explore AethercodeTech's standalone travel booking engines: Flight GDS/NDC, Hotel Extranet & Bedbanks, Tour Itinerary Builder, Visa OCR, Intercity Bus, Cab Transfers & Insurance.">
+  <meta name="keywords"
+    content="flight booking engine, hotel extranet, tour package itinerary builder, travel visa software, bus booking api, airport cab dispatch, travel insurance engine, AethercodeTech">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit, Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Font Awesome 6 Pro Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Custom Theme, Component & Services Stylesheets -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/services.css">
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+  <!-- Ambient Light Particle & Glow Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Ambient Blue Lighting Blobs -->
+  <div class="bg-ambient-glow glow-blue-1"></div>
+
+  <!-- Top Global Announcement Strip -->
+  <div class="top-announcement-bar">
+    <div class="container container-wide announcement-inner">
+      <div class="announcement-badge">NEW</div>
+      <div class="announcement-text">
+        <span><strong>Flight Engine 3.0:</strong> Direct IATA NDC 21.3 Level 4 live integration with real-time seat deck selectors & dynamic ancillaries.</span>
+      </div>
+      <a href="index.html#api-sandbox" class="announcement-link">
+        Explore API Console <i class="fas fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container container-wide">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo-wrapper">
+          <img src="assets/images/logo.png" alt="AethercodeTech Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <!-- Dropdown 1: Solutions & Services -->
+            <li class="nav-item dropdown">
+              <a href="services.html" class="nav-link">
+                Solutions & Services <i class="fas fa-chevron-down ms-1"></i>
+              </a>
+              <div class="dropdown-menu-custom dropdown-solutions">
+                <div class="dropdown-grid-2">
+                  <a href="services.html#tab-b2b" class="dropdown-item-card">
+                    <div class="dropdown-item-icon"><i class="fas fa-users-cog"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">B2B Agent Portal</div>
+                      <div class="dropdown-item-desc">Multi-tier agency network, markups & credit wallet ledger.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-b2c" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #ecfeff; color: #0891b2;"><i
+                        class="fas fa-globe"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">B2C OTA Engine</div>
+                      <div class="dropdown-item-desc">High-speed flight, hotel & package consumer booking engine.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-api" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #fdf4ff; color: #9333ea;"><i
+                        class="fas fa-network-wired"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">Travel API & NDC Hub</div>
+                      <div class="dropdown-item-desc">Unified REST API for 120+ airlines, GDS & 1M+ hotels.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-sbt" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #f0fdf4; color: #16a34a;"><i
+                        class="fas fa-building"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">Corporate Travel (SBT)</div>
+                      <div class="dropdown-item-desc">Policy compliance, manager approvals & GST invoicing.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-whitelabel" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #fff7ed; color: #ea580c;"><i
+                        class="fas fa-palette"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">White-Label Portals</div>
+                      <div class="dropdown-item-desc">Launch turnkey branded travel agency portal in 7 days.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-mobile" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #eef2ff; color: #4338ca;"><i
+                        class="fas fa-mobile-alt"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">Mobile Apps & Cloud IT</div>
+                      <div class="dropdown-item-desc">iOS & Android Flutter apps, microservices & ERP sync.</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="dropdown-bottom-bar">
+                  <span><i class="fas fa-bolt text-primary me-1"></i> Looking for custom portal architecture?</span>
+                  <a href="#" class="trigger-demo-modal">Consult Our Solutions Architect <i
+                      class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Dropdown 2: Our Products (Active on this page) -->
+            <li class="nav-item dropdown">
+              <a href="products.html" class="nav-link active">
+                Our Products <i class="fas fa-chevron-down ms-1"></i>
+              </a>
+              <div class="dropdown-menu-custom dropdown-products-mega">
+                <div class="dropdown-products-container">
+                  <div class="dropdown-products-main">
+                    <div class="dropdown-col">
+                      <div class="dropdown-col-heading">
+                        <i class="fas fa-layer-group text-primary me-2"></i> Travel Booking Engines
+                      </div>
+                      <div class="dropdown-items-stack">
+                        <a href="products.html#tab-flight" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-blue"><i class="fas fa-plane-departure"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Flight Booking Engine</div>
+                            <div class="dropdown-item-desc">GDS, LCC & NDC aggregation with auto-ticketing.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-hotel" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-cyan"><i class="fas fa-hotel"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Hotel Booking System</div>
+                            <div class="dropdown-item-desc">1M+ global hotels with real-time rate parity.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-tours" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-teal"><i class="fas fa-umbrella-beach"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tour & Holiday Packages</div>
+                            <div class="dropdown-item-desc">Dynamic holiday itineraries & quotation engine.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-insurance" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-emerald"><i class="fas fa-shield-heart"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Travel Insurance Engine</div>
+                            <div class="dropdown-item-desc">Overseas, domestic & instant policy issuance.</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="dropdown-col">
+                      <div class="dropdown-col-heading">
+                        <i class="fas fa-route text-primary me-2"></i> Mobility & Ancillaries
+                      </div>
+                      <div class="dropdown-items-stack">
+                        <a href="products.html#tab-cabs" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-amber"><i class="fas fa-taxi"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Cab & Airport Transfers</div>
+                            <div class="dropdown-item-desc">Outstation, local & transfer dispatch integrations.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-bus" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-rose"><i class="fas fa-bus"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Intercity Bus Booking</div>
+                            <div class="dropdown-item-desc">Pan-India bus routes with seat deck selector.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-visa" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-purple"><i class="fas fa-passport"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Visa Processing System</div>
+                            <div class="dropdown-item-desc">eVisa applications, checklist & live tracking.</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="dropdown-spotlight-card">
+                    <div>
+                      <div class="spotlight-badge"><i class="fas fa-cubes text-primary"></i> Complete Suite</div>
+                      <div class="spotlight-img-wrap">
+                        <div class="spotlight-card-icon"><i class="fas fa-layer-group"></i></div>
+                        <h4 class="spotlight-title">Unified Booking Stack</h4>
+                      </div>
+                      <p class="spotlight-desc">Run Flights, Hotels, Holidays, Visas, Cabs, Buses & Insurance from a single API ecosystem.</p>
+                      <ul class="spotlight-list">
+                        <li><i class="fas fa-check-circle text-success"></i> Single cart checkout engine</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Shared multi-tier wallet balance</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Turnkey REST API & UI embeds</li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm w-100 trigger-demo-modal mt-2">
+                      <i class="fas fa-calendar-check me-1"></i> Request Product Demo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="dropdown-bottom-bar">
+                  <div class="dropdown-bottom-links">
+                    <a href="index.html#api-sandbox"><i class="fas fa-terminal text-primary me-1"></i> Live Developer Console</a>
+                    <span class="dropdown-divider-dot">•</span>
+                    <a href="services.html"><i class="fas fa-layer-group text-primary me-1"></i> Solutions & Services</a>
+                  </div>
+                  <a href="products.html" class="dropdown-view-all">
+                    Explore All Products <i class="fas fa-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Action Group -->
+        <div class="header-cta-group">
+          <a href="tel:+919717183934" class="btn-header-phone d-none d-xl-inline-flex">
+            <i class="fas fa-phone-alt text-primary"></i> +91 9717 1839 34
+          </a>
+          <a href="#" class="btn btn-primary sheen-effect trigger-demo-modal d-none d-sm-inline-flex">
+            <i class="fas fa-calendar-alt me-2"></i> Schedule Demo
+          </a>
+          <button class="mobile-nav-toggle d-lg-none" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer-menu">
+    <div class="mobile-drawer-content">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home me-2"></i> Home</a></li>
+        <li><a href="products.html" class="mobile-nav-link active"><i class="fas fa-layer-group me-2"></i> Products Suite</a></li>
+        <li><a href="services.html" class="mobile-nav-link"><i class="fas fa-cubes me-2"></i> Services & Solutions</a></li>
+        <li><a href="about.html" class="mobile-nav-link"><i class="fas fa-info-circle me-2"></i> About Us</a></li>
+        <li><a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope me-2"></i> Contact Us</a></li>
+      </ul>
+      <div class="mobile-drawer-cta mt-4">
+        <a href="tel:+919717183934" class="btn btn-outline-primary w-100 mb-2">
+          <i class="fas fa-phone-alt me-2"></i> +91 9717 1839 34
+        </a>
+        <a href="#" class="btn btn-primary w-100 trigger-demo-modal">
+          <i class="fas fa-calendar-alt me-2"></i> Schedule Demo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="services-hero-section">
+      <div class="container container-wide">
+        <div class="services-hero-content" data-aos="fade-up">
+          <div class="services-hero-badge">
+            <i class="fas fa-layer-group"></i> Enterprise Booking Engine Stack
+          </div>
+          <h1 class="services-hero-title">
+            Specialized Travel Products & <span class="text-gradient-blue">Booking Engines</span>
+          </h1>
+          <p class="services-hero-subtitle">
+            Explore our cutting-edge standalone travel engines with interactive UI designs, live supplier integrations, real-time inventory caching, and automated back-office ticketing.
+          </p>
+        </div>
+
+        <!-- Performance Metrics Strip -->
+        <div class="services-stats-strip" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-stat-card">
+            <div class="stat-icon-wrap stat-icon-blue"><i class="fas fa-plane-departure"></i></div>
+            <div>
+              <div class="stat-num">120+</div>
+              <div class="stat-label">Airlines (GDS, LCC & NDC)</div>
+            </div>
+          </div>
+          <div class="service-stat-card">
+            <div class="stat-icon-wrap stat-icon-cyan"><i class="fas fa-hotel"></i></div>
+            <div>
+              <div class="stat-num">1,000,000+</div>
+              <div class="stat-label">Global Hotel Inventories</div>
+            </div>
+          </div>
+          <div class="service-stat-card">
+            <div class="stat-icon-wrap stat-icon-teal"><i class="fas fa-bolt"></i></div>
+            <div>
+              <div class="stat-num">&lt; 180ms</div>
+              <div class="stat-label">Fast Search Response SLA</div>
+            </div>
+          </div>
+          <div class="service-stat-card">
+            <div class="stat-icon-wrap stat-icon-purple"><i class="fas fa-shield-check"></i></div>
+            <div>
+              <div class="stat-num">99.99%</div>
+              <div class="stat-label">High Availability Cloud SLA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VERTICAL TAB ELEMENT WITH EFFECTS FOR PRODUCTS
+         ========================================================================== -->
+    <section class="vertical-services-section" id="vertical-services-anchor">
+      <div class="container container-wide">
+        
+        <div class="vertical-services-layout">
+
+          <!-- ==========================================================================
+               LEFT STICKY SIDEBAR: VERTICAL TABS (STANDALONE PRODUCTS)
+               ========================================================================== -->
+          <aside class="vtab-sidebar" data-aos="fade-right">
+            <!-- Vertical Tab Button List -->
+            <div class="vtab-list" id="vtab-buttons-list">
+
+              <!-- Tab 1: Flight Booking Engine -->
+              <button class="vtab-btn active" data-target="vtab-pane-flight">
+                <div class="vtab-btn-icon" style="background: #eff6ff; color: #1d4ed8;">
+                  <i class="fas fa-plane-departure"></i>
+                </div>
+                <div class="vtab-btn-info">
+                  <div class="vtab-btn-title">Flight Booking Engine</div>
+                  <div class="vtab-btn-sub"><i class="fas fa-tag"></i> GDS, LCC & NDC Direct</div>
+                </div>
+                <i class="fas fa-chevron-right vtab-btn-arrow"></i>
+              </button>
+
+              <!-- Tab 2: Hotel Booking System -->
+              <button class="vtab-btn" data-target="vtab-pane-hotel">
+                <div class="vtab-btn-icon" style="background: #ecfeff; color: #0891b2;">
+                  <i class="fas fa-hotel"></i>
+                </div>
+                <div class="vtab-btn-info">
+                  <div class="vtab-btn-title">Hotel Booking System</div>
+                  <div class="vtab-btn-sub"><i class="fas fa-tag"></i> 1M+ Hotels & Bedbanks</div>
+                </div>
+                <i class="fas fa-chevron-right vtab-btn-arrow"></i>
+              </button>
+
+              <!-- Tab 3: Tour & Holiday Packages -->
+              <button class="vtab-btn" data-target="vtab-pane-tours">
+                <div class="vtab-btn-icon" style="background: #f0fdf4; color: #16a34a;">
+                  <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <div class="vtab-btn-info">
+                  <div class="vtab-btn-title">Tour & Holiday Builder</div>
+                  <div class="vtab-btn-sub"><i class="fas fa-tag"></i> Day-Wise Itinerary Engine</div>
+                </div>
+                <i class="fas fa-chevron-right vtab-btn-arrow"></i>
+              </button>
+
+              <!-- Tab 4: Visa Processing System -->
+              <button class="vtab-btn" data-target="vtab-pane-visa">
+                <div class="vtab-btn-icon" style="background: #faf5ff; color: #9333ea;">
+                  <i class="fas fa-passport"></i>
+                </div>
+                <div class="vtab-btn-info">
+                  <div class="vtab-btn-title">Visa Processing System</div>
+                  <div class="vtab-btn-sub"><i class="fas fa-tag"></i> AI Passport OCR & Vault</div>
+                </div>
+                <i class="fas fa-chevron-right vtab-btn-arrow"></i>
+              </button>
+
+              <!-- Tab 5: Intercity Bus Booking -->
+              <button class="vtab-btn" data-target="vtab-pane-bus">
+                <div class="vtab-btn-icon" style="background: #fff1f2; color: #e11d48;">
+                  <i class="fas fa-bus"></i>
+                </div>
+                <div class="vtab-btn-info">
+                  <div class="vtab-btn-title">Intercity Bus Engine</div>
+                  <div class="vtab-btn-sub"><i class="fas fa-tag"></i> Live Seat Deck Selector</div>
+                </div>
+                <i class="fas fa-chevron-right vtab-btn-arrow"></i>
+              </button>
+
+              <!-- Tab 6: Cab & Airport Transfers -->
+              <button class="vtab-btn" data-target="vtab-pane-cabs">
+                <div class="vtab-btn-icon" style="background: #fffbeb; color: #d97706;">
+                  <i class="fas fa-taxi"></i>
+                </div>
+                <div class="vtab-btn-info">
+                  <div class="vtab-btn-title">Cab & Airport Transfers</div>
+                  <div class="vtab-btn-sub"><i class="fas fa-tag"></i> Flight Delay Sync Dispatch</div>
+                </div>
+                <i class="fas fa-chevron-right vtab-btn-arrow"></i>
+              </button>
+
+              <!-- Tab 7: Travel Insurance Engine -->
+              <button class="vtab-btn" data-target="vtab-pane-insurance">
+                <div class="vtab-btn-icon" style="background: #ecfdf5; color: #059669;">
+                  <i class="fas fa-shield-heart"></i>
+                </div>
+                <div class="vtab-btn-info">
+                  <div class="vtab-btn-title">Travel Insurance Engine</div>
+                  <div class="vtab-btn-sub"><i class="fas fa-tag"></i> Instant Underwriting API</div>
+                </div>
+                <i class="fas fa-chevron-right vtab-btn-arrow"></i>
+              </button>
+
+            </div>
+          </aside>
+
+          <!-- ==========================================================================
+               RIGHT CONTENT AREA: PRODUCT PANES WITH GRAPHIC UI PREVIEWS
+               ========================================================================== -->
+          <div class="vtab-content-area" id="vtab-content-container">
+
+            <!-- PRODUCT 1: Flight Booking Engine -->
+            <div class="vtab-pane active" id="vtab-pane-flight">
+              <div class="service-full-card">
+                <div class="service-card-header">
+                  <div class="service-card-title-group">
+                    <div class="service-avatar-icon" style="background: #eff6ff; color: #1d4ed8;">
+                      <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <div>
+                      <span class="service-cat-pill" style="background: #eff6ff; color: #1d4ed8;"><i class="fas fa-tag"></i> Aviation Booking Engine</span>
+                      <h2 class="service-title-text">Flight Booking Engine (GDS, LCC & NDC Aggregation)</h2>
+                      <p class="service-tagline-text">
+                        Enterprise flight booking system connecting Amadeus, Sabre, Galileo, TBO Air, Tripjack, and direct IATA NDC Level 4 airline APIs with sub-180ms fare comparison, interactive seat maps, and automated ticketing.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-header-actions">
+                    <a href="#" class="btn btn-primary btn-sm trigger-demo-modal"><i class="fas fa-calendar-check me-1"></i> Request Flight Demo</a>
+                  </div>
+                </div>
+
+                <!-- Product UI Graphic Showcase -->
+                <div class="product-ui-preview-wrap" data-aos="zoom-in">
+                  <div class="product-ui-badge"><i class="fas fa-sparkles"></i> Live UI Design Preview</div>
+                  <img src="assets/images/flight-engine-ui.jpg" alt="Flight Booking Engine UI Design Mockup" class="product-ui-img">
+                </div>
+
+                <div class="service-inner-tabs-container">
+                  <div class="service-inner-nav">
+                    <button class="inner-tab-link active" data-target="flight-cap"><i class="fas fa-list-check"></i> Engine Capabilities</button>
+                    <button class="inner-tab-link" data-target="flight-seat"><i class="fas fa-chair"></i> Aircraft Seat Selector</button>
+                    <button class="inner-tab-link" data-target="flight-fare"><i class="fas fa-calendar-days"></i> Calendar Matrix</button>
+                    <button class="inner-tab-link" data-target="flight-api"><i class="fas fa-code"></i> Auto-PNR API</button>
+                  </div>
+
+                  <div class="inner-tab-pane active" id="flight-cap">
+                    <div class="service-features-grid">
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #eff6ff; color: #1d4ed8;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">GDS & NDC Level 4 Combinability</div>
+                          <div class="feature-desc">Combines published, private corporate, and direct airline NDC fares into one unified lowest-fare result stream.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #eff6ff; color: #1d4ed8;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">LCC Multi-City & Split Ticketing</div>
+                          <div class="feature-desc">Intelligent split ticketing algorithms creating virtual interline combinations across non-partner low-cost carriers.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #eff6ff; color: #1d4ed8;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Dynamic Baggage & Meal Ancillaries</div>
+                          <div class="feature-desc">Interactive add-on selector for prepaid extra baggage, gourmet meals, priority check-in, and sports equipment.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #eff6ff; color: #1d4ed8;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Automated Void & Refund Webhooks</div>
+                          <div class="feature-desc">1-click 24-hour void window execution, cancellation fee calculator, and automatic wallet credit refunds.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="flight-seat">
+                    <div class="tech-architecture-box">
+                      <div class="tech-arch-header">
+                        <span class="tech-arch-title"><i class="fas fa-chair"></i> SVG Interactive Aircraft Seat Map</span>
+                        <span class="badge bg-primary">Boeing & Airbus Ready</span>
+                      </div>
+                      <div class="flow-steps-grid">
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">CLASS 01</div>
+                          <div class="flow-step-name">Economy Cabin</div>
+                          <div class="flow-step-sub">Standard & Extra Legroom</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">CLASS 02</div>
+                          <div class="flow-step-name">Premium Economy</div>
+                          <div class="flow-step-sub">Priority boarding included</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">CLASS 03</div>
+                          <div class="flow-step-name">Business Class</div>
+                          <div class="flow-step-sub">Lie-flat suite allotment</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">STATUS</div>
+                          <div class="flow-step-name">Real-Time Seat Locks</div>
+                          <div class="flow-step-sub">Instant supplier hold sync</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="flight-fare">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h4 class="text-primary fw-bold mb-1">+/- 3 Days</h4>
+                          <small class="text-muted">Dynamic Low Fare Calendar Grid</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h4 class="text-success fw-bold mb-1">&lt; 180ms</h4>
+                          <small class="text-muted">Redis Cache Fast Fare Ingestion</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h4 class="text-info fw-bold mb-1">100%</h4>
+                          <small class="text-muted">Guaranteed Ticketing Accuracy</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="flight-api">
+                    <div class="code-preview-block">
+                      <span class="code-badge-method method-post">POST</span> <span style="color: #cbd5e1;">/v2/flights/issue-ticket</span>
+                      <pre style="margin: 0; color: #93c5fd;"><code>{
+  "order_id": "ORD-2026-99120",
+  "pnr": "AEC78X",
+  "supplier": "AMADEUS_GDS",
+  "payment_method": "AGENT_WALLET",
+  "send_whatsapp_eticket": true
+}</code></pre>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="specs-chips-row">
+                  <span class="spec-chip"><i class="fas fa-check"></i> IATA NDC 21.3 Level 4</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Interactive Seat Maps</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Dynamic Baggage Selector</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Auto-Ticket Webhooks</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRODUCT 2: Hotel Booking System -->
+            <div class="vtab-pane" id="vtab-pane-hotel">
+              <div class="service-full-card">
+                <div class="service-card-header">
+                  <div class="service-card-title-group">
+                    <div class="service-avatar-icon" style="background: #ecfeff; color: #0891b2;">
+                      <i class="fas fa-hotel"></i>
+                    </div>
+                    <div>
+                      <span class="service-cat-pill" style="background: #ecfeff; color: #0891b2;"><i class="fas fa-tag"></i> Accommodation Hub</span>
+                      <h2 class="service-title-text">Hotel Booking System & Supplier Extranet (1M+ Properties)</h2>
+                      <p class="service-tagline-text">
+                        Aggregated hotel inventory engine connecting Hotelbeds, TBO Holidays, WebBeds, Expedia Partner Solutions, and direct hotelier contracting extranet with real-time rate parity algorithms.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-header-actions">
+                    <a href="#" class="btn btn-primary btn-sm trigger-demo-modal"><i class="fas fa-calendar-check me-1"></i> Request Hotel Demo</a>
+                  </div>
+                </div>
+
+                <!-- Product UI Graphic Showcase -->
+                <div class="product-ui-preview-wrap" data-aos="zoom-in">
+                  <div class="product-ui-badge"><i class="fas fa-sparkles"></i> Live UI Design Preview</div>
+                  <img src="assets/images/hotel-engine-ui.jpg" alt="Hotel Booking Engine UI Design Mockup" class="product-ui-img">
+                </div>
+
+                <div class="service-inner-tabs-container">
+                  <div class="service-inner-nav">
+                    <button class="inner-tab-link active" data-target="hotel-cap"><i class="fas fa-list-check"></i> Hotel Features</button>
+                    <button class="inner-tab-link" data-target="hotel-map"><i class="fas fa-map-location-dot"></i> Map-Based Search</button>
+                    <button class="inner-tab-link" data-target="hotel-extranet"><i class="fas fa-sliders"></i> Hotel Extranet</button>
+                  </div>
+
+                  <div class="inner-tab-pane active" id="hotel-cap">
+                    <div class="service-features-grid">
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #ecfeff; color: #0891b2;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Multi-Bedbank Rate Deduplication</div>
+                          <div class="feature-desc">Matches same hotel room types across 6+ suppliers, returning the cheapest rate and highest agent commission.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #ecfeff; color: #0891b2;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Room Meal Plan Customizer</div>
+                          <div class="feature-desc">Room-Only (EP), Breakfast Included (CP), Half-Board (MAP), and All-Inclusive (AP) rate options with free cancellation badges.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #ecfeff; color: #0891b2;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">High-Res Photo & Amenity Library</div>
+                          <div class="feature-desc">Integrated rich media with TripAdvisor ratings, swimming pool tags, pet-friendly filters, and verified guest reviews.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #ecfeff; color: #0891b2;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Instant Branded Hotel Voucher PDF</div>
+                          <div class="feature-desc">Generates agency white-labeled PDF voucher with QR verification, hotel address, check-in instructions, and contact details.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="hotel-map">
+                    <div class="tech-architecture-box">
+                      <div class="tech-arch-header">
+                        <span class="tech-arch-title"><i class="fas fa-map-marked-alt"></i> Interactive Map Pin Clustering</span>
+                        <span class="badge bg-cyan text-dark" style="background: #06b6d4;">Radius Search</span>
+                      </div>
+                      <div class="flow-steps-grid">
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">GEO 01</div>
+                          <div class="flow-step-name">Landmark Search</div>
+                          <div class="flow-step-sub">Near airport, beach or downtown</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">GEO 02</div>
+                          <div class="flow-step-name">Price Filter Slider</div>
+                          <div class="flow-step-sub">Filter by nightly budget</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">GEO 03</div>
+                          <div class="flow-step-name">Live Map Pin Hover</div>
+                          <div class="flow-step-sub">Instant photo & room rate preview</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">GEO 04</div>
+                          <div class="flow-step-name">1-Click Booking</div>
+                          <div class="flow-step-sub">Direct reservation from map view</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="hotel-extranet">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-calendar-check text-cyan fs-3 mb-2" style="color: #0891b2;"></i>
+                          <h6 class="fw-bold">Direct Contract Rates</h6>
+                          <small class="text-muted">Hoteliers manage allotments & rate stops</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-tags text-cyan fs-3 mb-2" style="color: #0891b2;"></i>
+                          <h6 class="fw-bold">Dynamic Surcharges</h6>
+                          <small class="text-muted">High-season weekend & gala dinner fees</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-receipt text-cyan fs-3 mb-2" style="color: #0891b2;"></i>
+                          <h6 class="fw-bold">Channel Manager Sync</h6>
+                          <small class="text-muted">RateGain, STAAH & SiteMinder 2-way sync</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="specs-chips-row">
+                  <span class="spec-chip"><i class="fas fa-check"></i> 1M+ Global Properties</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Bedbank Rate Deduplication</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Direct Hotelier Extranet</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Branded PDF Vouchers</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRODUCT 3: Tour & Holiday Packages Builder -->
+            <div class="vtab-pane" id="vtab-pane-tours">
+              <div class="service-full-card">
+                <div class="service-card-header">
+                  <div class="service-card-title-group">
+                    <div class="service-avatar-icon icon-teal" style="background: #f0fdf4; color: #16a34a;">
+                      <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <div>
+                      <span class="service-cat-pill" style="background: #f0fdf4; color: #16a34a;"><i class="fas fa-tag"></i> Leisure & Package Tech</span>
+                      <h2 class="service-title-text">Tour & Holiday Package Builder (Day-Wise Itinerary Engine)</h2>
+                      <p class="service-tagline-text">
+                        Drag-and-drop holiday package builder with day-wise itinerary creator, live flight/hotel cost calculations, activity photo galleries, and 1-click interactive client proposals.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-header-actions">
+                    <a href="#" class="btn btn-primary btn-sm trigger-demo-modal"><i class="fas fa-calendar-check me-1"></i> Tour Engine Demo</a>
+                  </div>
+                </div>
+
+                <!-- Product UI Graphic Showcase -->
+                <div class="product-ui-preview-wrap" data-aos="zoom-in">
+                  <div class="product-ui-badge"><i class="fas fa-sparkles"></i> Live UI Design Preview</div>
+                  <img src="assets/images/tour-package-ui.jpg" alt="Tour Package Itinerary Builder UI Design Mockup" class="product-ui-img">
+                </div>
+
+                <div class="service-inner-tabs-container">
+                  <div class="service-inner-nav">
+                    <button class="inner-tab-link active" data-target="tour-cap"><i class="fas fa-list-check"></i> Builder Features</button>
+                    <button class="inner-tab-link" data-target="tour-pdf"><i class="fas fa-file-pdf"></i> Branded PDF Proposals</button>
+                    <button class="inner-tab-link" data-target="tour-crm"><i class="fas fa-funnel-dollar"></i> Lead Management CRM</button>
+                  </div>
+
+                  <div class="inner-tab-pane active" id="tour-cap">
+                    <div class="service-features-grid">
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-teal"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Day-Wise Itinerary Creator</div>
+                          <div class="feature-desc">Add attractions, sightseeing activities, hotel check-ins, meals, and transfer details with photo galleries.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-teal"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Dynamic Package Costing</div>
+                          <div class="feature-desc">Combines live flight fares, hotel bedbank rates, cab rental costs, and agent margin in real time.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-teal"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Fixed Departure & Group Tours</div>
+                          <div class="feature-desc">Seat inventory management for fixed departure dates and group pricing tiers with split payments.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-teal"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Custom Inclusions & Exclusions</div>
+                          <div class="feature-desc">Pre-saved library of terms, visa requirements, payment terms, and cancellation policies.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="tour-pdf">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h4 class="text-success fw-bold mb-1">&lt; 30 Sec</h4>
+                          <small class="text-muted">To Generate High-Res Branded PDF</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h4 class="text-primary fw-bold mb-1">Interactive</h4>
+                          <small class="text-muted">Online Proposal Link with Payment Button</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h4 class="text-info fw-bold mb-1">Multi-Currency</h4>
+                          <small class="text-muted">USD, EUR, GBP, INR & AED Proposals</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="tour-crm">
+                    <div class="tech-architecture-box">
+                      <div class="tech-arch-header">
+                        <span class="tech-arch-title"><i class="fas fa-users"></i> Lead-to-Booking Travel Sales Pipeline</span>
+                        <span class="badge bg-teal text-white" style="background: #16a34a;">Automated Follow-ups</span>
+                      </div>
+                      <div class="flow-steps-grid">
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">LEAD 01</div>
+                          <div class="flow-step-name">Inquiry Capture</div>
+                          <div class="flow-step-sub">From website, WhatsApp & Ads</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">LEAD 02</div>
+                          <div class="flow-step-name">Quote Dispatch</div>
+                          <div class="flow-step-sub">Instant customized itinerary link</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">LEAD 03</div>
+                          <div class="flow-step-name">Smart Reminders</div>
+                          <div class="flow-step-sub">Automated payment link follow-ups</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">LEAD 04</div>
+                          <div class="flow-step-name">Fulfillment</div>
+                          <div class="flow-step-sub">Supplier vouchers dispatched to guest</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="specs-chips-row">
+                  <span class="spec-chip"><i class="fas fa-check"></i> Drag & Drop Itinerary</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Multi-Currency PDF</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> WhatsApp Quote Sharing</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Group Departure Engine</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRODUCT 4: Visa Processing System -->
+            <div class="vtab-pane" id="vtab-pane-visa">
+              <div class="service-full-card">
+                <div class="service-card-header">
+                  <div class="service-card-title-group">
+                    <div class="service-avatar-icon icon-purple" style="background: #faf5ff; color: #9333ea;">
+                      <i class="fas fa-passport"></i>
+                    </div>
+                    <div>
+                      <span class="service-cat-pill" style="background: #faf5ff; color: #9333ea;"><i class="fas fa-tag"></i> Regulatory Tech</span>
+                      <h2 class="service-title-text">Online Visa Application & Document Management System</h2>
+                      <p class="service-tagline-text">
+                        Automated digital eVisa platform with AI passport OCR scanning, requirement checklist generator, encrypted applicant vault, and real-time consular tracking.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-header-actions">
+                    <a href="#" class="btn btn-primary btn-sm trigger-demo-modal"><i class="fas fa-calendar-check me-1"></i> Visa System Demo</a>
+                  </div>
+                </div>
+
+                <!-- Product UI Graphic Showcase -->
+                <div class="product-ui-preview-wrap" data-aos="zoom-in">
+                  <div class="product-ui-badge"><i class="fas fa-sparkles"></i> Live UI Design Preview</div>
+                  <img src="assets/images/mobility-visa-ui.jpg" alt="Visa and Mobility Tech UI Design Mockup" class="product-ui-img">
+                </div>
+
+                <div class="service-inner-tabs-container">
+                  <div class="service-inner-nav">
+                    <button class="inner-tab-link active" data-target="visa-cap"><i class="fas fa-list-check"></i> System Features</button>
+                    <button class="inner-tab-link" data-target="visa-ocr-box"><i class="fas fa-file-shield"></i> AI Passport OCR</button>
+                    <button class="inner-tab-link" data-target="visa-status-box"><i class="fas fa-clock-rotate-left"></i> Live Milestones</button>
+                  </div>
+
+                  <div class="inner-tab-pane active" id="visa-cap">
+                    <div class="service-features-grid">
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-purple"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">150+ Country eVisa Directory</div>
+                          <div class="feature-desc">Dynamic rules and forms for UAE, Schengen, UK, US, Singapore, Saudi Arabia, and Thailand.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-purple"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">AI Document Checklist Generator</div>
+                          <div class="feature-desc">Customized list of required documents based on applicant nationality, profession, and travel purpose.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-purple"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Automated Status Notifications</div>
+                          <div class="feature-desc">WhatsApp & SMS alerts dispatched automatically when embassy review milestones advance.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-purple"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Agent Markup & Consultation Fees</div>
+                          <div class="feature-desc">Agents can add dynamic service fees on top of government embassy visa charges.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="visa-ocr-box">
+                    <div class="tech-architecture-box">
+                      <div class="tech-arch-header">
+                        <span class="tech-arch-title"><i class="fas fa-shield-alt"></i> AI Passport OCR & Document Verification</span>
+                        <span class="badge bg-purple text-white" style="background: #9333ea;">99.4% MRZ Accuracy</span>
+                      </div>
+                      <div class="flow-steps-grid">
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">STEP 01</div>
+                          <div class="flow-step-name">Passport Upload</div>
+                          <div class="flow-step-sub">User takes photo or uploads scan</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">STEP 02</div>
+                          <div class="flow-step-name">MRZ Parsing</div>
+                          <div class="flow-step-sub">Auto-extracts name, DOB, number & expiry</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">STEP 03</div>
+                          <div class="flow-step-name">Validation Check</div>
+                          <div class="flow-step-sub">Flags &lt;6 months validity or blur</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">STEP 04</div>
+                          <div class="flow-step-name">Vault Storage</div>
+                          <div class="flow-step-sub">AES-256 encrypted storage</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="visa-status-box">
+                    <div class="row g-3">
+                      <div class="col-md-3">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-file-arrow-up text-primary fs-3 mb-2"></i>
+                          <h6 class="fw-bold">Docs Received</h6>
+                          <small class="text-muted">OCR verification passed</small>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-landmark text-warning fs-3 mb-2"></i>
+                          <h6 class="fw-bold">Embassy Queued</h6>
+                          <small class="text-muted">Biometrics appointment scheduled</small>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-spinner fa-spin text-info fs-3 mb-2"></i>
+                          <h6 class="fw-bold">Under Review</h6>
+                          <small class="text-muted">Consular review in progress</small>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-check-circle text-success fs-3 mb-2"></i>
+                          <h6 class="fw-bold">Visa Approved</h6>
+                          <small class="text-muted">eVisa ready for download</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="specs-chips-row">
+                  <span class="spec-chip"><i class="fas fa-check"></i> AI Passport OCR</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> AES-256 Encryption</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Dynamic Checklist</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> WhatsApp Alerts</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRODUCT 5: Intercity Bus Booking -->
+            <div class="vtab-pane" id="vtab-pane-bus">
+              <div class="service-full-card">
+                <div class="service-card-header">
+                  <div class="service-card-title-group">
+                    <div class="service-avatar-icon icon-rose" style="background: #fff1f2; color: #e11d48;">
+                      <i class="fas fa-bus"></i>
+                    </div>
+                    <div>
+                      <span class="service-cat-pill" style="background: #fff1f2; color: #e11d48;"><i class="fas fa-tag"></i> Surface Mobility</span>
+                      <h2 class="service-title-text">Intercity Bus Booking Engine & Deck Selector</h2>
+                      <p class="service-tagline-text">
+                        Direct API integration with leading bus consolidators (RedBus, AbhiBus, Mantis) covering 100,000+ routes with live seat deck layouts, boarding point maps, and instant m-tickets.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-header-actions">
+                    <a href="#" class="btn btn-primary btn-sm trigger-demo-modal"><i class="fas fa-calendar-check me-1"></i> Bus System Demo</a>
+                  </div>
+                </div>
+
+                <!-- Product UI Graphic Showcase -->
+                <div class="product-ui-preview-wrap" data-aos="zoom-in">
+                  <div class="product-ui-badge"><i class="fas fa-sparkles"></i> Live UI Design Preview</div>
+                  <img src="assets/images/bus-booking-ui.jpg" alt="Intercity Bus Booking Engine UI Mockup" class="product-ui-img">
+                </div>
+
+                <div class="service-inner-tabs-container">
+                  <div class="service-inner-nav">
+                    <button class="inner-tab-link active" data-target="bus-cap"><i class="fas fa-list-check"></i> Engine Capabilities</button>
+                    <button class="inner-tab-link" data-target="bus-seat-box"><i class="fas fa-couch"></i> Interactive Seat Deck</button>
+                    <button class="inner-tab-link" data-target="bus-map-box"><i class="fas fa-location-dot"></i> GPS Boarding Points</button>
+                  </div>
+
+                  <div class="inner-tab-pane active" id="bus-cap">
+                    <div class="service-features-grid">
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-rose"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">100,000+ Pan-India Routes</div>
+                          <div class="feature-desc">Integrated with 3,500+ private bus operators and state road transport corporations (SRTCs).</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-rose"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Bus Type Filters</div>
+                          <div class="feature-desc">Multi-axle Volvo, AC Sleeper, Semi-Sleeper, Electric Intercity, and BharatBenz coaches.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-rose"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Women-Only Seat Protection</div>
+                          <div class="feature-desc">Smart seating rules preventing adjacent male bookings next to single female travelers for security.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon icon-rose"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Instant QR M-Ticket Issuance</div>
+                          <div class="feature-desc">SMS & WhatsApp m-ticket with operator contact number, bus registration number, and conductor GPS link.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="bus-seat-box">
+                    <div class="tech-architecture-box">
+                      <div class="tech-arch-header">
+                        <span class="tech-arch-title"><i class="fas fa-couch"></i> Multi-Deck Interactive Seat Matrix</span>
+                        <span class="badge bg-danger">Lower & Upper Decks</span>
+                      </div>
+                      <div class="flow-steps-grid">
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">DECK 01</div>
+                          <div class="flow-step-name">Lower Berth Layout</div>
+                          <div class="flow-step-sub">Seater & sleeper dimensions</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">DECK 02</div>
+                          <div class="flow-step-name">Upper Berth Layout</div>
+                          <div class="flow-step-sub">Single & double sleeper berths</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">COLOR KEY</div>
+                          <div class="flow-step-name">Real-Time Status</div>
+                          <div class="flow-step-sub">Available / Booked / Female Reserved</div>
+                        </div>
+                        <div class="flow-step-node">
+                          <div class="flow-step-num">PRICING</div>
+                          <div class="flow-step-name">Dynamic Berth Fare</div>
+                          <div class="flow-step-sub">Front vs back seat differential pricing</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="bus-map-box">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h5 class="text-danger fw-bold mb-1">Google Maps</h5>
+                          <small class="text-muted">Exact geo-coordinates of pickup point</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h5 class="text-primary fw-bold mb-1">Landmarks</h5>
+                          <small class="text-muted">Helpful nearby landmark hints</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h5 class="text-success fw-bold mb-1">Live Tracking</h5>
+                          <small class="text-muted">Live bus tracking on journey day</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="specs-chips-row">
+                  <span class="spec-chip"><i class="fas fa-check"></i> RedBus / AbhiBus API</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Live Seat Deck Layout</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Women Berth Protection</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> WhatsApp M-Ticket</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRODUCT 6: Cab & Airport Transfers -->
+            <div class="vtab-pane" id="vtab-pane-cabs">
+              <div class="service-full-card">
+                <div class="service-card-header">
+                  <div class="service-card-title-group">
+                    <div class="service-avatar-icon icon-amber" style="background: #fffbeb; color: #d97706;">
+                      <i class="fas fa-taxi"></i>
+                    </div>
+                    <div>
+                      <span class="service-cat-pill" style="background: #fffbeb; color: #d97706;"><i class="fas fa-tag"></i> Ground Logistics</span>
+                      <h2 class="service-title-text">Cab & Airport Transfer Booking Dispatch System</h2>
+                      <p class="service-tagline-text">
+                        Outstation, local hourly rental, and point-to-point airport transfer platform with automated driver assignment, toll/tax calculation, and flight delay tracking.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-header-actions">
+                    <a href="#" class="btn btn-primary btn-sm trigger-demo-modal"><i class="fas fa-calendar-check me-1"></i> Cab System Demo</a>
+                  </div>
+                </div>
+
+                <!-- Product UI Graphic Showcase -->
+                <div class="product-ui-preview-wrap" data-aos="zoom-in">
+                  <div class="product-ui-badge"><i class="fas fa-sparkles"></i> Live UI Design Preview</div>
+                  <img src="assets/images/cab-dispatch-ui.jpg" alt="Cab & Airport Transfers Dispatch UI Mockup" class="product-ui-img">
+                </div>
+
+                <div class="service-inner-tabs-container">
+                  <div class="service-inner-nav">
+                    <button class="inner-tab-link active" data-target="cab-cap"><i class="fas fa-list-check"></i> Transfer Capabilities</button>
+                    <button class="inner-tab-link" data-target="cab-flight-box"><i class="fas fa-plane-arrival"></i> Flight Delay Tracking</button>
+                    <button class="inner-tab-link" data-target="cab-driver-box"><i class="fas fa-id-card"></i> Driver App Sync</button>
+                  </div>
+
+                  <div class="inner-tab-pane active" id="cab-cap">
+                    <div class="service-features-grid">
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #fffbeb; color: #d97706;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Airport Meet & Greet Service</div>
+                          <div class="feature-desc">Automated pickup scheduling with driver holding customer nameboard at airport arrival terminal.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #fffbeb; color: #d97706;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Outstation One-Way & Round-Trip</div>
+                          <div class="feature-desc">Transparent per-km rate calculator including driver allowance, toll taxes, state permits, and night charges.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #fffbeb; color: #d97706;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Vehicle Category Variety</div>
+                          <div class="feature-desc">Sedan (Dzire/Etios), SUV (Innova Crysta/Ertiga), Luxury (Mercedes/BMW), and Tempo Travellers for groups.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #fffbeb; color: #d97706;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">1-Click Flight Checkout Add-on</div>
+                          <div class="feature-desc">Add airport drop-off or pickup directly in the flight booking checkout flow for high-margin ancillary revenue.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="cab-flight-box">
+                    <div class="tech-architecture-box">
+                      <div class="tech-arch-header">
+                        <span class="tech-arch-title"><i class="fas fa-plane-arrival"></i> Automated Flight Schedule Monitoring</span>
+                        <span class="badge bg-warning text-dark">Zero Missed Pickups</span>
+                      </div>
+                      <div class="p-3 text-light" style="font-size: 0.88rem;">
+                        Our cab dispatch system automatically tracks the traveler's inbound flight number via real-time aviation telemetry. If the flight is delayed, the driver's pickup time adjusts automatically with zero penalty to the customer!
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="cab-driver-box">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-mobile-screen-button text-warning fs-3 mb-2"></i>
+                          <h6 class="fw-bold">Driver Android App</h6>
+                          <small class="text-muted">Duty accept/reject, route GPS & OTP start</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-map-location-dot text-warning fs-3 mb-2"></i>
+                          <h6 class="fw-bold">Live Passenger Link</h6>
+                          <small class="text-muted">Real-time map tracking of driver arrival</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <i class="fas fa-receipt text-warning fs-3 mb-2"></i>
+                          <h6 class="fw-bold">Automated Invoicing</h6>
+                          <small class="text-muted">GPS trip distance based final toll billing</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="specs-chips-row">
+                  <span class="spec-chip"><i class="fas fa-check"></i> Flight Number Sync</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> GPS Live Vehicle Tracking</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> All-Inclusive Toll Pricing</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Corporate Billing Integration</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRODUCT 7: Travel Insurance Engine -->
+            <div class="vtab-pane" id="vtab-pane-insurance">
+              <div class="service-full-card">
+                <div class="service-card-header">
+                  <div class="service-card-title-group">
+                    <div class="service-avatar-icon" style="background: #ecfdf5; color: #059669;">
+                      <i class="fas fa-shield-heart"></i>
+                    </div>
+                    <div>
+                      <span class="service-cat-pill" style="background: #ecfdf5; color: #059669;"><i class="fas fa-tag"></i> Travel Protection API</span>
+                      <h2 class="service-title-text">Travel Insurance Engine & Instant Underwriting API</h2>
+                      <p class="service-tagline-text">
+                        Integrated travel insurance solution offering instant policy quotes and digital COI generation for medical emergency, baggage loss, trip delays, and adventure sports coverage.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-header-actions">
+                    <a href="#" class="btn btn-primary btn-sm trigger-demo-modal"><i class="fas fa-calendar-check me-1"></i> Insurance Demo</a>
+                  </div>
+                </div>
+
+                <!-- Product UI Graphic Showcase -->
+                <div class="product-ui-preview-wrap" data-aos="zoom-in">
+                  <div class="product-ui-badge"><i class="fas fa-sparkles"></i> Live UI Design Preview</div>
+                  <img src="assets/images/insurance-engine-ui.jpg" alt="Travel Insurance Engine UI Design Mockup" class="product-ui-img">
+                </div>
+
+                <div class="service-inner-tabs-container">
+                  <div class="service-inner-nav">
+                    <button class="inner-tab-link active" data-target="ins-cap"><i class="fas fa-list-check"></i> Coverage Plans</button>
+                    <button class="inner-tab-link" data-target="ins-api"><i class="fas fa-bolt"></i> Instant Issuance API</button>
+                    <button class="inner-tab-link" data-target="ins-claims"><i class="fas fa-file-medical"></i> Claims Workflow</button>
+                  </div>
+
+                  <div class="inner-tab-pane active" id="ins-cap">
+                    <div class="service-features-grid">
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #ecfdf5; color: #059669;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">International & Schengen Compliant</div>
+                          <div class="feature-desc">Pre-approved €30,000+ medical emergency cover meeting mandatory embassy visa criteria.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #ecfdf5; color: #059669;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">1-Click Flight Checkout Upsell</div>
+                          <div class="feature-desc">Seamless pre-selected checkbox during passenger details entry providing 40%+ conversion.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #ecfdf5; color: #059669;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Family & Student Special Plans</div>
+                          <div class="feature-desc">Discounted multi-trip annual floaters, overseas student tuition fees protection, and senior citizen options.</div>
+                        </div>
+                      </div>
+                      <div class="service-feature-item">
+                        <div class="feature-check-icon" style="background: #ecfdf5; color: #059669;"><i class="fas fa-check"></i></div>
+                        <div>
+                          <div class="feature-title">Instant Digital Policy PDF</div>
+                          <div class="feature-desc">Immediate policy certificate dispatched with toll-free international emergency assistance numbers.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="ins-api">
+                    <div class="code-preview-block">
+                      <span class="code-badge-method method-post">POST</span> <span style="color: #cbd5e1;">/v2/insurance/issue-policy</span>
+                      <pre style="margin: 0; color: #93c5fd;"><code>{
+  "plan_code": "SCHENGEN_GOLD_50K",
+  "traveler": { "name": "John Doe", "age": 32, "passport": "Z8941203" },
+  "trip": { "destination": "SCHENGEN_ZONE", "start": "2026-11-15", "end": "2026-11-25" },
+  "instant_certificate": true
+}</code></pre>
+                    </div>
+                  </div>
+
+                  <div class="inner-tab-pane" id="ins-claims">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h4 class="text-success fw-bold mb-1">Cashless</h4>
+                          <small class="text-muted">Global Hospital Network</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h4 class="text-primary fw-bold mb-1">24/7 Hotline</h4>
+                          <small class="text-muted">Multi-Lingual Assistance</small>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-3 bg-light rounded border text-center">
+                          <h4 class="text-info fw-bold mb-1">Digital Claim</h4>
+                          <small class="text-muted">Paperless WhatsApp Claims</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="specs-chips-row">
+                  <span class="spec-chip"><i class="fas fa-check"></i> Schengen €30,000 Validated</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Instant Policy Generation</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> Cashless Global Network</span>
+                  <span class="spec-chip"><i class="fas fa-check"></i> 40%+ Checkout Conversion</span>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- End of vtab-content-area -->
+
+        </div> <!-- End of vertical-services-layout -->
+
+      </div>
+    </section>
+
+    <!-- MATRIX / FEATURE COMPARISON -->
+    <section class="matrix-section">
+      <div class="container container-wide">
+        <div class="section-header text-center" data-aos="fade-up">
+          <div class="section-tag"><i class="fas fa-table-cells"></i> Engine Capability Comparison</div>
+          <h2 class="section-title">Standalone Engines vs <span class="text-gradient-blue">Full Ecosystem</span></h2>
+          <p class="section-description">
+            Choose individual booking engines via REST API or deploy the entire unified multi-product travel suite.
+          </p>
+        </div>
+
+        <div class="matrix-table-card" data-aos="fade-up">
+          <div class="table-responsive-matrix">
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th style="width: 34%;">Core Product Capability</th>
+                  <th class="col-highlight" style="width: 28%;">
+                    <i class="fas fa-crown text-warning me-1"></i> AethercodeTech Engine
+                  </th>
+                  <th style="width: 19%;">Legacy GDS Screen</th>
+                  <th style="width: 19%;">Generic Aggregator</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Live NDC Level 4 & LCC Combinations</strong></td>
+                  <td class="col-highlight"><i class="fas fa-check-circle text-success me-1"></i> Included (Sub-180ms)</td>
+                  <td><i class="fas fa-times-circle text-danger me-1"></i> No NDC</td>
+                  <td><i class="fas fa-triangle-exclamation text-warning me-1"></i> High Markup Hidden</td>
+                </tr>
+                <tr>
+                  <td><strong>Interactive Aircraft & Bus Seat Decks</strong></td>
+                  <td class="col-highlight"><i class="fas fa-check-circle text-success me-1"></i> Real-Time SVG Decks</td>
+                  <td><i class="fas fa-times-circle text-danger me-1"></i> Text Commands Only</td>
+                  <td><i class="fas fa-triangle-exclamation text-warning me-1"></i> Slow Sync</td>
+                </tr>
+                <tr>
+                  <td><strong>AI Passport MRZ OCR Scanning</strong></td>
+                  <td class="col-highlight"><i class="fas fa-check-circle text-success me-1"></i> 99.4% Extraction</td>
+                  <td><i class="fas fa-times-circle text-danger me-1"></i> Manual Typing</td>
+                  <td><i class="fas fa-times-circle text-danger me-1"></i> Not Available</td>
+                </tr>
+                <tr>
+                  <td><strong>Day-Wise Drag & Drop Tour Itinerary Builder</strong></td>
+                  <td class="col-highlight"><i class="fas fa-check-circle text-success me-1"></i> &lt;30s PDF Proposal</td>
+                  <td><i class="fas fa-times-circle text-danger me-1"></i> Word Docs</td>
+                  <td><i class="fas fa-triangle-exclamation text-warning me-1"></i> Extra Subscription</td>
+                </tr>
+                <tr>
+                  <td><strong>Flight Delay Telemetry & Cab Dispatch</strong></td>
+                  <td class="col-highlight"><i class="fas fa-check-circle text-success me-1"></i> Automated Pickup Adjust</td>
+                  <td><i class="fas fa-times-circle text-danger me-1"></i> Manual Calls</td>
+                  <td><i class="fas fa-times-circle text-danger me-1"></i> No Flight Link</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGH IMPACT CTA BANNER -->
+    <section class="cta-showcase-wrap" data-aos="fade-up">
+      <div class="container container-wide">
+        <div class="cta-banner-section" data-aos="zoom-in">
+          <div class="cta-banner-grid">
+            <div data-aos="fade-right" data-aos-delay="100">
+              <div class="section-tag" style="background: rgba(255, 255, 255, 0.15); color: #ffffff; border-color: rgba(255, 255, 255, 0.3);">
+                <i class="fas fa-rocket"></i> Next-Gen Travel Engine Suite
+              </div>
+              <h2 class="cta-banner-title">
+                Ready to Integrate Our <span class="text-white" style="text-decoration: underline; text-decoration-color: #67e8f9; text-underline-offset: 6px;">Booking Engines?</span>
+              </h2>
+              <p class="cta-banner-p">
+                Speak directly with our Chief Solutions Architects. We will evaluate your inventory requirements, map out GDS/NDC connectors, and provide immediate sandbox API keys.
+              </p>
+
+              <!-- Key Value Metrics Grid -->
+              <div class="cta-value-props-grid">
+                <div class="cta-prop-item">
+                  <div class="cta-prop-icon"><i class="fas fa-bolt"></i></div>
+                  <div>
+                    <strong>7 to 14-Day Launch</strong>
+                    <span>Turnkey go-live guarantee</span>
+                  </div>
+                </div>
+                <div class="cta-prop-item">
+                  <div class="cta-prop-icon"><i class="fas fa-network-wired"></i></div>
+                  <div>
+                    <strong>120+ Live Connectors</strong>
+                    <span>Flights, hotels, NDC & LCC</span>
+                  </div>
+                </div>
+                <div class="cta-prop-item">
+                  <div class="cta-prop-icon"><i class="fas fa-shield-halved"></i></div>
+                  <div>
+                    <strong>99.99% Cloud SLA</strong>
+                    <span>Enterprise Kubernetes infrastructure</span>
+                  </div>
+                </div>
+                <div class="cta-prop-item">
+                  <div class="cta-prop-icon"><i class="fas fa-headset"></i></div>
+                  <div>
+                    <strong>24/7 Dedicated Support</strong>
+                    <span>Named Tech Account Manager</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct Hotline Info -->
+              <div class="cta-hotline-strip">
+                <div class="hotline-pill">
+                  <i class="fas fa-phone-volume"></i>
+                  <span>Direct Hotline: <a href="tel:+919717183934" style="color: #ffffff; font-weight: 700;">+91 9717 1839 34</a></span>
+                </div>
+                <div class="hotline-pill">
+                  <i class="fas fa-envelope-open-text"></i>
+                  <span>Email: <a href="mailto:Prabir@aethercodetech.com" style="color: #ffffff; font-weight: 700;">Prabir@aethercodetech.com</a></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Embedded Interactive Query Card -->
+            <div class="cta-form-card" data-aos="fade-left" data-aos-delay="200">
+              <div class="cta-form-header">
+                <div class="cta-form-badge"><i class="fas fa-bolt text-warning"></i> Fast 15-Min Response</div>
+                <h3 class="cta-form-title">Request Product Demo & Sandbox</h3>
+                <p class="cta-form-subtitle">Get instant sandbox credentials and a customized commercial proposal.</p>
+              </div>
+
+              <form id="products-cta-form" onsubmit="event.preventDefault(); alert('Thank you! A senior solution architect will connect with you within 15 minutes with sandbox API credentials.');">
+                <div class="form-group mb-3">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="row g-2 mb-3">
+                  <div class="col-sm-6">
+                    <label class="form-label">Work Email *</label>
+                    <input type="email" class="form-control" placeholder="name@company.com" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label">Phone / WhatsApp *</label>
+                    <input type="tel" class="form-control" placeholder="+91 98765 43210" required>
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label">Select Booking Engine Product *</label>
+                  <select class="form-control" required>
+                    <option value="flight">1. Flight Booking Engine (GDS, LCC & NDC)</option>
+                    <option value="hotel">2. Hotel Booking System & Extranet (1M+)</option>
+                    <option value="tours">3. Tour & Holiday Package Itinerary Builder</option>
+                    <option value="visa">4. Visa Processing & Document Management System</option>
+                    <option value="bus">5. Intercity Bus Booking System (Seat Decks)</option>
+                    <option value="cabs">6. Cab & Airport Transfers Dispatch Engine</option>
+                    <option value="insurance">7. Travel Insurance Underwriting API</option>
+                    <option value="all">Full Multi-Product Booking Suite</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg sheen-effect w-100 mt-2" style="font-weight: 700;">
+                  <i class="fas fa-paper-plane me-2"></i> Book Product Architecture Demo
+                </button>
+                <div class="text-center mt-2" style="font-size: 0.78rem; color: var(--text-muted);">
+                  <i class="fas fa-lock text-success me-1"></i> No obligation • NDA Protected • Free Technical Consultation
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container container-wide">
+      <div class="footer-grid">
+
+        <!-- Col 1: Brand & Mission -->
+        <div>
+          <a href="index.html" class="footer-brand-wrap">
+            <img src="assets/images/logo.png" alt="AethercodeTech Logo" class="footer-brand-logo">
+          </a>
+          <p class="footer-tagline">
+            Next-Generation Travel Technology SaaS Platform, Custom Portals, and Unified Travel APIs. Making Technology Accessible to All.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div>
+          <h4 class="footer-heading">Portals & Solutions</h4>
+          <ul class="footer-link-list">
+            <li class="footer-link-item"><a href="services.html#tab-b2b"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> B2B Travel Portal</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-b2c"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> B2C OTA Engine</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-api"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> Travel API & NDC Hub</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-sbt"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> Corporate SBT / OBT</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-whitelabel"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> White-Label Portals</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-mobile"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> Mobile Apps & Cloud</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Booking Engines -->
+        <div>
+          <h4 class="footer-heading">Booking Engines</h4>
+          <ul class="footer-link-list">
+            <li class="footer-link-item"><a href="products.html#tab-flight"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Flight Booking Engine</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-hotel"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Hotel Booking System</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-tours"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Tour & Holiday Packages</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-visa"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Visa Processing System</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-bus"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Intercity Bus Booking</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-cabs"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Cab & Airport Transfers</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <h4 class="footer-heading">Global Headquarters</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt text-primary"></i>
+            <span>AethercodeTech Pvt. Ltd.<br>Tower B, Tech Boulevard, Sector 127<br>Noida, New Delhi NCR, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt text-primary"></i>
+            <span><a href="tel:+919717183934">+91 9717 1839 34</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope text-primary"></i>
+            <span><a href="mailto:Prabir@aethercodetech.com">Prabir@aethercodetech.com</a></span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 AethercodeTech Pvt. Ltd. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">API SLAs</a>
+          <a href="#">Security & ISO 27001</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- POPUP MODAL DIALOG: QUERY FOR DEMO -->
+  <div class="modal-overlay" id="demo-modal">
+    <div class="modal-dialog-box">
+      <button class="modal-close-btn" id="close-modal-btn">&times;</button>
+
+      <div id="modal-form-wrap">
+        <div style="text-align: center; margin-bottom: 20px;">
+          <div class="section-tag"><i class="fas fa-desktop"></i> Priority Demo</div>
+          <h3 style="font-size: 1.5rem; margin-top: 6px;">Schedule AethercodeTech Demo</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Get a personalized live preview of our travel booking engine with live supplier inventories.</p>
+        </div>
+
+        <form id="demo-request-form">
+          <div class="form-group">
+            <label class="form-label">Your Name *</label>
+            <input type="text" class="form-control" placeholder="Alex Morgan" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Company / Agency Name *</label>
+            <input type="text" class="form-control" placeholder="Apex Travel Network" required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label class="form-label">Email Address *</label>
+              <input type="email" class="form-control" placeholder="alex@company.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone / WhatsApp *</label>
+              <input type="tel" class="form-control" placeholder="+91 97171 83934" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Product of Interest *</label>
+            <select class="form-control" required>
+              <option value="flight">Flight Booking Engine (GDS/NDC)</option>
+              <option value="hotel">Hotel Booking System (1M+ Hotels)</option>
+              <option value="tours">Tour Package Itinerary Builder</option>
+              <option value="visa">Visa Processing System</option>
+              <option value="bus">Intercity Bus Booking Engine</option>
+              <option value="cabs">Cab & Airport Transfers Dispatch</option>
+              <option value="insurance">Travel Insurance Underwriting API</option>
+              <option value="suite">Full Enterprise Multi-Product Stack</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-glow sheen-effect" style="width: 100%; margin-top: 10px;">
+            <i class="fas fa-paper-plane me-2"></i> Confirm Demo Schedule
+          </button>
+          <div style="font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 10px;">
+            <i class="fas fa-lock text-success me-1"></i> Your information is kept strictly confidential.
+          </div>
+        </form>
+      </div>
+
+      <div id="modal-success-msg" style="display: none; text-align: center; padding: 30px 10px;">
+        <div style="width: 60px; height: 60px; background: #ecfdf5; color: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 16px auto;">
+          <i class="fas fa-check"></i>
+        </div>
+        <h4 style="font-size: 1.4rem; font-weight: 700;">Demo Request Received!</h4>
+        <p style="color: var(--text-muted); margin-top: 8px;">Our solutions architect will contact you within 15 minutes with your meeting confirmation and credentials.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3.3 JS Bundle & AOS & Custom Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

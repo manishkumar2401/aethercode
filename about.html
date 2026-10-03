@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | AethercodeTech - Leading Travel Technology & SaaS Portal Solutions</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Learn about AethercodeTech Pvt. Ltd., a pioneer in travel technology solutions, custom B2B/B2C portals, unified GDS/NDC APIs, and white-label booking engines. Making Technology Accessible to All.">
+  <meta name="keywords"
+    content="About AethercodeTech, Travel Technology Company Delhi, B2B Travel Portal Developers, Travel API Integration Company, Amadeus Sabre TBO Integration, Travel SaaS India">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aethercodetech.com/about.html">
+  <meta property="og:title" content="About AethercodeTech - Making Technology Accessible to All">
+  <meta property="og:description"
+    content="Next-Generation Travel Technology SaaS Platform, Custom Portals, and Unified Travel APIs.">
+  <meta property="og:image" content="assets/images/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- FontAwesome 6.5.2 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom Theme & Component Stylesheets -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+  <!-- Ambient Light Particle & Glow Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Ambient Blue Lighting Blobs -->
+  <div class="bg-ambient-glow glow-blue-1"></div>
+  <div class="bg-ambient-glow glow-blue-2"></div>
+  <div class="bg-ambient-glow glow-blue-3"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <div class="container container-wide">
+      <div class="announcement-inner">
+        <div class="announcement-left">
+          <span class="status-badge"><span class="status-dot"></span> System Operational (99.99% Uptime)</span>
+          <span class="d-none d-md-inline" style="opacity: 0.9;"><i class="fas fa-shield-alt me-1"></i> ISO 27001 &
+            PCI-DSS Certified Travel Tech</span>
+        </div>
+        <div class="announcement-right">
+          <a href="tel:+919717183934" class="announcement-link"><i class="fas fa-phone-alt"></i> +91 9717 1839 34</a>
+          <a href="mailto:Prabir@aethercodetech.com" class="announcement-link"><i class="fas fa-envelope"></i>
+            Prabir@aethercodetech.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container container-wide">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo-wrapper">
+          <img src="assets/images/logo.png" alt="AethercodeTech Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Desktop Navigation Links with SaaS Dropdowns -->
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+            <!-- Dropdown 1: Solutions & Services -->
+            <li class="nav-item dropdown">
+              <a href="services.html" class="nav-link">
+                Solutions & Services <i class="fas fa-chevron-down ms-1"></i>
+              </a>
+              <div class="dropdown-menu-custom dropdown-solutions">
+                <div class="dropdown-grid-2">
+                  <a href="services.html#tab-b2b" class="dropdown-item-card">
+                    <div class="dropdown-item-icon"><i class="fas fa-users-cog"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">B2B Agent Portal</div>
+                      <div class="dropdown-item-desc">Multi-tier agency network, markups & credit wallet ledger.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-b2c" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #ecfeff; color: #0891b2;"><i
+                        class="fas fa-globe"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">B2C OTA Engine</div>
+                      <div class="dropdown-item-desc">High-speed flight, hotel & package consumer booking engine.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-api" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #fdf4ff; color: #9333ea;"><i
+                        class="fas fa-network-wired"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">Travel API & NDC Hub</div>
+                      <div class="dropdown-item-desc">Unified REST API for 120+ airlines, GDS & 1M+ hotels.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-sbt" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #f0fdf4; color: #16a34a;"><i
+                        class="fas fa-building"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">Corporate Travel (SBT)</div>
+                      <div class="dropdown-item-desc">Policy compliance, manager approvals & GST invoicing.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-whitelabel" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #fff7ed; color: #ea580c;"><i
+                        class="fas fa-palette"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">White-Label Portals</div>
+                      <div class="dropdown-item-desc">Launch turnkey branded travel agency portal in 7 days.</div>
+                    </div>
+                  </a>
+                  <a href="services.html#tab-mobile" class="dropdown-item-card">
+                    <div class="dropdown-item-icon" style="background: #eef2ff; color: #4338ca;"><i
+                        class="fas fa-mobile-alt"></i></div>
+                    <div>
+                      <div class="dropdown-item-title">Mobile Apps & Cloud IT</div>
+                      <div class="dropdown-item-desc">iOS & Android Flutter apps, microservices & ERP sync.</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="dropdown-bottom-bar">
+                  <span><i class="fas fa-bolt text-primary me-1"></i> Need custom architectural integration?</span>
+                  <a href="services.html" class="trigger-demo-modal">Consult Our Solutions Architect <i
+                      class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Dropdown 2: Our Products -->
+            <li class="nav-item dropdown">
+              <a href="products.html" class="nav-link">
+                Our Products <i class="fas fa-chevron-down ms-1"></i>
+              </a>
+              <div class="dropdown-menu-custom dropdown-products-mega">
+                <div class="dropdown-products-container">
+                  <div class="dropdown-products-main">
+
+                    <!-- Category 1: Core Travel Engines -->
+                    <div class="dropdown-col">
+                      <div class="dropdown-col-heading">
+                        <i class="fas fa-layer-group text-primary me-2"></i> Travel Booking Engines
+                      </div>
+                      <div class="dropdown-items-stack">
+                        <a href="products.html#tab-flight" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-blue"><i class="fas fa-plane-departure"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Flight Booking Engine</div>
+                            <div class="dropdown-item-desc">GDS, LCC & NDC aggregation with auto-ticketing.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-hotel" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-cyan"><i class="fas fa-hotel"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Hotel Booking System</div>
+                            <div class="dropdown-item-desc">1M+ global hotels with real-time rate parity.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-tours" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-teal"><i class="fas fa-umbrella-beach"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tour & Holiday Packages</div>
+                            <div class="dropdown-item-desc">Dynamic holiday itineraries & quotation engine.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-insurance" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-emerald"><i class="fas fa-shield-heart"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Travel Insurance Engine</div>
+                            <div class="dropdown-item-desc">Overseas, domestic & instant policy issuance.</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Category 2: Mobility & Ancillaries -->
+                    <div class="dropdown-col">
+                      <div class="dropdown-col-heading">
+                        <i class="fas fa-route text-primary me-2"></i> Mobility & Ancillary Services
+                      </div>
+                      <div class="dropdown-items-stack">
+                        <a href="products.html#tab-cabs" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-amber"><i class="fas fa-taxi"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Cab & Airport Transfers</div>
+                            <div class="dropdown-item-desc">Outstation, local & transfer dispatch integrations.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-bus" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-rose"><i class="fas fa-bus"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Intercity Bus Booking</div>
+                            <div class="dropdown-item-desc">Pan-India bus routes with seat deck selector.</div>
+                          </div>
+                        </a>
+                        <a href="products.html#tab-visa" class="dropdown-item-card">
+                          <div class="dropdown-item-icon icon-purple"><i class="fas fa-passport"></i></div>
+                          <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Visa Processing System</div>
+                            <div class="dropdown-item-desc">eVisa applications, checklist & live tracking.</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="dropdown-spotlight-card">
+                    <div>
+                      <div class="spotlight-badge"><i class="fas fa-layer-group text-primary"></i> Standalone & API Suites</div>
+                      <div class="spotlight-img-wrap">
+                        <div class="spotlight-card-icon"><i class="fas fa-cubes"></i></div>
+                        <h4 class="spotlight-title">Unified Booking Engines</h4>
+                      </div>
+                      <p class="spotlight-desc">Modular booking engines for Flights, Hotels, Tours, Visas, Buses, Cabs & Insurance with live UI designs.</p>
+                      <ul class="spotlight-list">
+                        <li><i class="fas fa-check-circle text-success"></i> Standalone or API integrations</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Real-time multi-supplier inventory</li>
+                        <li><i class="fas fa-check-circle text-success"></i> White-label ready interfaces</li>
+                      </ul>
+                    </div>
+                    <a href="products.html" class="btn btn-primary btn-sm w-100 mt-2">
+                      <i class="fas fa-layer-group me-1"></i> View All Products
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Navigation CTAs -->
+        <div class="header-cta-group">
+          <a href="tel:+919717183934" class="btn-header-phone d-none d-xl-inline-flex">
+            <i class="fas fa-phone-alt text-primary"></i> +91 9717 1839 34
+          </a>
+          <a href="#" class="btn btn-primary sheen-effect trigger-demo-modal d-none d-sm-inline-flex">
+            <i class="fas fa-calendar-alt me-2"></i> Schedule Demo
+          </a>
+          <button class="mobile-nav-toggle d-lg-none" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer-menu">
+    <div class="mobile-drawer-content">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home me-2"></i> Home</a></li>
+        <li><a href="services.html" class="mobile-nav-link"><i class="fas fa-cubes me-2"></i> Solutions & Services</a></li>
+        <li><a href="products.html" class="mobile-nav-link"><i class="fas fa-layer-group me-2"></i> Products Suite</a></li>
+        <li><a href="about.html" class="mobile-nav-link active"><i class="fas fa-info-circle me-2"></i> About Us</a></li>
+        <li><a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope me-2"></i> Contact Us</a></li>
+      </ul>
+      <div class="mobile-drawer-cta mt-4">
+        <a href="tel:+919717183934" class="btn btn-outline-primary w-100 mb-2">
+          <i class="fas fa-phone-alt me-2"></i> +91 9717 1839 34
+        </a>
+        <a href="#" class="btn btn-primary w-100 trigger-demo-modal">
+          <i class="fas fa-calendar-alt me-2"></i> Schedule Demo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO SECTION -->
+    <section class="page-hero-section tech-grid-pattern">
+      <div class="container container-wide">
+        <div class="page-hero-content" data-aos="fade-up" data-aos-duration="800">
+          <div class="page-breadcrumb">
+            <a href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+            <span>/</span>
+            <span>About Us</span>
+          </div>
+
+          <div class="hero-pill-badge" style="display: inline-flex; margin-bottom: 16px;">
+            <span class="badge-sparkle">About AethercodeTech</span>
+            <span class="badge-text"><i class="fas fa-compass" style="color: #3b82f6;"></i> Our Mission, Story & Innovations</span>
+          </div>
+
+          <h1 class="page-hero-title">
+            Empowering the Global Travel Ecosystem <br>
+            <span class="text-gradient-blue">Through Accessible Technology</span>
+          </h1>
+
+          <p class="page-hero-subtitle">
+            <strong>AethercodeTech Pvt. Ltd.</strong> is a specialized travel technology SaaS company headquarted in New Delhi, India. We architect mission-critical booking engines, multi-tier B2B agent portals, unified NDC/GDS API pipelines, and turnkey white-label platforms that propel travel businesses into the digital future.
+          </p>
+
+          <div class="hero-cta-group" style="justify-content: center;">
+            <a href="#" class="btn btn-primary btn-lg btn-glow trigger-demo-modal">
+              <i class="fas fa-calendar-check me-2"></i> Schedule Architecture Demo
+            </a>
+            <a href="contact.html" class="btn btn-secondary btn-lg">
+              <i class="fas fa-headset me-2"></i> Contact Solutions Desk
+            </a>
+          </div>
+
+          <!-- Quick Stats Strip -->
+          <div class="page-stats-strip">
+            <div class="page-stat-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="page-stat-number">500M+</div>
+              <div class="page-stat-label">Monthly Processed Searches</div>
+            </div>
+            <div class="page-stat-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="page-stat-number">&lt; 180ms</div>
+              <div class="page-stat-label">Ultra-Low API Latency</div>
+            </div>
+            <div class="page-stat-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="page-stat-number">120+</div>
+              <div class="page-stat-label">Airlines & GDS Integrations</div>
+            </div>
+            <div class="page-stat-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="page-stat-number">99.99%</div>
+              <div class="page-stat-label">Guaranteed SLA Uptime</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION SECTION -->
+    <section class="section-spacing" style="background: #ffffff;">
+      <div class="container container-wide">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag"><i class="fas fa-bullseye"></i> Purpose & Ambition</div>
+          <h2 class="section-title">Built on Engineering Rigor & Domain Passion</h2>
+          <p class="section-description">
+            We founded AethercodeTech with one resolute commitment: to democratize high-end travel software infrastructure so that every travel agency, tour operator, and corporate TMC can operate with the same technological superiority as billion-dollar OTAs.
+          </p>
+        </div>
+
+        <div class="mission-vision-grid">
+          <div class="mission-card" data-aos="fade-right" data-aos-delay="100">
+            <div class="mission-icon-box">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Our Mission</h3>
+            <p>
+              To eliminate technical friction and prohibitive entry barriers in global travel commerce by delivering plug-and-play B2B/B2C portals, robust API normalization engines, and turnkey white-label booking software. We make complex GDS, LCC, and hotel bedbank protocols effortlessly accessible to all.
+            </p>
+            <ul class="feature-bullet-list" style="margin-top: 20px;">
+              <li class="feature-bullet-item"><i class="fas fa-check-circle text-primary"></i> 100% transparent pricing and low barrier to entry</li>
+              <li class="feature-bullet-item"><i class="fas fa-check-circle text-primary"></i> Unified JSON responses replacing legacy SOAP/XML</li>
+              <li class="feature-bullet-item"><i class="fas fa-check-circle text-primary"></i> Rapid time-to-market with 7-day portal rollouts</li>
+            </ul>
+          </div>
+
+          <div class="mission-card vision-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="mission-icon-box vision-icon-box">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3>Our Vision</h3>
+            <p>
+              To become the world's most dependable and developer-friendly travel technology backbone—orchestrating billions of flight, hotel, visa, and vacation bookings annually across 50+ countries with sub-second response times and bulletproof 99.99% availability.
+            </p>
+            <ul class="feature-bullet-list" style="margin-top: 20px;">
+              <li class="feature-bullet-item"><i class="fas fa-check-circle" style="color: #9333ea;"></i> Global multi-currency and multi-language support</li>
+              <li class="feature-bullet-item"><i class="fas fa-check-circle" style="color: #9333ea;"></i> Next-gen AI fare forecasting and dynamic margin engines</li>
+              <li class="feature-bullet-item"><i class="fas fa-check-circle" style="color: #9333ea;"></i> ISO 27001 & PCI-DSS certified zero-trust architecture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES SECTION -->
+    <section class="section-spacing" style="background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);">
+      <div class="container container-wide">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag"><i class="fas fa-gem"></i> The Aethercode Principles</div>
+          <h2 class="section-title">The Values That Guide Every Line of Code</h2>
+          <p class="section-description">
+            Our culture balances high-velocity engineering innovation with deep empathy for the daily operational realities faced by travel entrepreneurs.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="value-icon" style="background: #eff6ff; color: #1d4ed8;">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="value-title">Extreme Performance</h3>
+            <p class="value-desc">
+              Every millisecond counts in travel bookings. Our caching microservices and parallel search queries guarantee instant search feeds that maximize booking conversion.
+            </p>
+          </div>
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="value-icon" style="background: #ecfeff; color: #0891b2;">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="value-title">Bank-Grade Security</h3>
+            <p class="value-desc">
+              From PCI-DSS tokenized payments to encrypted agent wallet ledgers, your agency and customer data are safeguarded with enterprise-grade protection.
+            </p>
+          </div>
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="value-icon" style="background: #fdf4ff; color: #9333ea;">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="value-title">Developer Simplicity</h3>
+            <p class="value-desc">
+              We translate labyrinthine airline GDS commands into clean, modern RESTful JSON endpoints with interactive documentation, SDKs, and sandbox test harnesses.
+            </p>
+          </div>
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="value-icon" style="background: #f0fdf4; color: #16a34a;">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3 class="value-title">Accessible & Fair Pricing</h3>
+            <p class="value-desc">
+              No hidden setup fees or opaque maintenance costs. We offer predictable SaaS subscription and setup pricing so businesses of all sizes can grow profitably.
+            </p>
+          </div>
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="value-icon" style="background: #fff7ed; color: #ea580c;">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="value-title">24/7 Human-Led Support</h3>
+            <p class="value-desc">
+              Travel never sleeps. Our dedicated engineers and ticketing support desk in Delhi monitor systems around the clock to resolve any PNR or ticketing issue instantly.
+            </p>
+          </div>
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="value-icon" style="background: #eef2ff; color: #4338ca;">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h3 class="value-title">Agile Continuous Upgrades</h3>
+            <p class="value-desc">
+              Continuous delivery of NDC airline capabilities, new bedbanks, automated refund workflows, and GST compliance updates pushed seamlessly without downtime.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR JOURNEY & EVOLUTION TIMELINE -->
+    <section class="section-spacing" style="background: #ffffff;">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag"><i class="fas fa-history"></i> Milestones</div>
+          <h2 class="section-title">Our Journey of Continuous Innovation</h2>
+          <p class="section-description">
+            How AethercodeTech grew from a focused travel engineering team in Delhi into a premier travel SaaS provider powering hundreds of agencies.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Item 1 -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2021 • Genesis</span>
+              <h4 class="timeline-title">Founding & Core Engine Research</h4>
+              <p class="timeline-desc">
+                Founded in New Delhi by travel tech specialists with the vision to solve the fragmented API landscape and high licensing costs for small and mid-sized agencies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2022 • Expansion</span>
+              <h4 class="timeline-title">B2B Portal & Multi-Tier Markups</h4>
+              <p class="timeline-desc">
+                Launched the flagship B2B Agent Portal with multi-tier agency hierarchies, real-time credit wallet settlement, automated invoices, and TBO / Tripjack integrations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2023 • Scale</span>
+              <h4 class="timeline-title">Unified REST API & GDS Hub</h4>
+              <p class="timeline-desc">
+                Engineered the Aethercode Unified Travel API Hub, integrating Amadeus, Sabre, Galileo, and global bedbanks into a sub-180ms normalized JSON interface.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2024-2026 • SaaS Leadership</span>
+              <h4 class="timeline-title">1-Click White Label & Cloud Scaling</h4>
+              <p class="timeline-desc">
+                Surpassed 500M+ monthly search queries, scaled white-label onboarding to 7-day turnarounds, and achieved ISO 27001 / PCI-DSS compliance certifications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE & DEEP CAPABILITIES SECTION -->
+    <section class="section-spacing" style="background: linear-gradient(180deg, #f8faff 0%, #eff6ff 100%);">
+      <div class="container container-wide">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag"><i class="fas fa-server"></i> Enterprise Stack</div>
+          <h2 class="section-title">Built on Resilient, High-Throughput Cloud Tech</h2>
+          <p class="section-description">
+            A look under the hood at the engineering choices that make AethercodeTech systems ultra-fast, fault-tolerant, and secure.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="saas-feature-card h-100">
+              <div class="card-top-icon icon-blue"><i class="fas fa-network-wired"></i></div>
+              <h3 class="card-heading">Multi-Provider Aggregation</h3>
+              <p class="card-desc">
+                Queries up to 12 inventory sources simultaneously (Amadeus, Sabre, TBO, Tripjack, Hotelbeds) and removes duplicate itineraries with intelligent sorting.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="saas-feature-card h-100">
+              <div class="card-top-icon icon-cyan"><i class="fas fa-memory"></i></div>
+              <h3 class="card-heading">Sub-Millisecond Redis Caching</h3>
+              <p class="card-desc">
+                Multi-layer distributed caching reduces GDS query costs and delivers instant availability response times to high-volume OTA traffic.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="saas-feature-card h-100">
+              <div class="card-top-icon icon-purple"><i class="fas fa-cubes"></i></div>
+              <h3 class="card-heading">Kubernetes Microservices</h3>
+              <p class="card-desc">
+                Containerized microservices auto-scale during peak holiday booking seasons, ensuring zero downtime and 99.99% uptime compliance.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="saas-feature-card h-100">
+              <div class="card-top-icon icon-emerald"><i class="fas fa-wallet"></i></div>
+              <h3 class="card-heading">Real-Time Ledger Engine</h3>
+              <p class="card-desc">
+                Double-entry financial ledger for agent credit limits, top-ups, transaction markups, refund voiding, and automated GST reporting.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="saas-feature-card h-100">
+              <div class="card-top-icon icon-amber"><i class="fas fa-lock"></i></div>
+              <h3 class="card-heading">PCI-DSS Level 1 Security</h3>
+              <p class="card-desc">
+                End-to-end tokenization and bank-grade encryption guarantee that customer credit card data is handled strictly per global security standards.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="saas-feature-card h-100">
+              <div class="card-top-icon icon-indigo"><i class="fas fa-mobile-screen"></i></div>
+              <h3 class="card-heading">Omnichannel Booking APIs</h3>
+              <p class="card-desc">
+                Single backend powers desktop web, responsive mobile web, native Flutter iOS/Android apps, and third-party corporate integrations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMPLIANCE & ACCREDITATIONS -->
+    <section class="section-spacing" style="background: #ffffff;">
+      <div class="container container-wide">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag"><i class="fas fa-certificate"></i> Verified Standards</div>
+          <h2 class="section-title">Enterprise Standards & Security Compliance</h2>
+          <p class="section-description">
+            Your travel operations and passenger data are protected with the highest levels of global certification.
+          </p>
+        </div>
+
+        <div class="compliance-grid">
+          <div class="compliance-badge-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="compliance-badge-icon"><i class="fas fa-shield-virus"></i></div>
+            <div>
+              <h4 style="font-size: 1rem; margin-bottom: 2px;">ISO 27001 Certified</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Information Security</p>
+            </div>
+          </div>
+
+          <div class="compliance-badge-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="compliance-badge-icon" style="background: #eff6ff; color: #1d4ed8;"><i class="fas fa-credit-card"></i></div>
+            <div>
+              <h4 style="font-size: 1rem; margin-bottom: 2px;">PCI-DSS Level 1</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Cardholder Data Security</p>
+            </div>
+          </div>
+
+          <div class="compliance-badge-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="compliance-badge-icon" style="background: #fdf4ff; color: #9333ea;"><i class="fas fa-plane"></i></div>
+            <div>
+              <h4 style="font-size: 1rem; margin-bottom: 2px;">IATA NDC Capable</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Airline Direct Distribution</p>
+            </div>
+          </div>
+
+          <div class="compliance-badge-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="compliance-badge-icon" style="background: #fff7ed; color: #ea580c;"><i class="fas fa-user-shield"></i></div>
+            <div>
+              <h4 style="font-size: 1rem; margin-bottom: 2px;">GDPR Compliant</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Global Privacy Protection</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="section-spacing" style="background: #ffffff;">
+      <div class="container container-wide">
+        <div class="cta-banner-section" data-aos="zoom-in">
+          <div class="cta-banner-grid" style="align-items: center;">
+            <div data-aos="fade-right" data-aos-delay="100">
+              <div class="section-tag"
+                style="background: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.3);">
+                <i class="fas fa-rocket"></i> Get Started Today
+              </div>
+              <h2 class="cta-banner-title">Ready to Elevate Your Travel Portal Experience?</h2>
+              <p class="cta-banner-p">
+                Speak directly with an AethercodeTech solutions architect to explore live demo portals, inspect API schemas, and discuss tailored pricing for your travel business.
+              </p>
+              <div style="display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap;">
+                <a href="#" class="btn btn-primary btn-glow trigger-demo-modal" style="background: #ffffff; color: var(--primary-900);">
+                  <i class="fas fa-calendar-check me-2"></i> Book Architecture Walkthrough
+                </a>
+                <a href="contact.html" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.4); color: #ffffff;">
+                  <i class="fas fa-phone-alt me-2"></i> Contact Us
+                </a>
+              </div>
+            </div>
+
+            <div style="text-align: center;" data-aos="fade-left" data-aos-delay="200">
+              <div style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: var(--radius-xl); padding: 36px; backdrop-filter: blur(10px);">
+                <i class="fas fa-headset" style="font-size: 3rem; color: #67e8f9; margin-bottom: 16px;"></i>
+                <h3 style="color: #ffffff; font-size: 1.4rem; margin-bottom: 8px;">Direct Expert Hotline</h3>
+                <p style="color: #e0f2fe; font-size: 0.95rem; margin-bottom: 20px;">Mon - Sat, 9:30 AM - 7:00 PM IST</p>
+                <a href="tel:+919717183934" style="color: #ffffff; font-size: 1.5rem; font-weight: 800; font-family: var(--font-mono); text-decoration: none; display: block; background: rgba(0,0,0,0.2); padding: 12px 20px; border-radius: var(--radius-md);">
+                  <i class="fas fa-phone-alt me-2 text-warning"></i> +91 9717 1839 34
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- POPUP MODAL DIALOG: QUERY FOR DEMO -->
+  <div class="modal-overlay" id="demo-modal">
+    <div class="modal-dialog-box">
+      <button class="modal-close-btn" id="close-modal-btn">&times;</button>
+
+      <div id="modal-form-wrap">
+        <div style="text-align: center; margin-bottom: 20px;">
+          <div class="section-tag"><i class="fas fa-desktop"></i> Priority Demo</div>
+          <h3 style="font-size: 1.5rem; margin-top: 6px;">Schedule AethercodeTech Demo</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Get a personalized live preview of our travel engine with real-time GDS flights & hotels.</p>
+        </div>
+
+        <form id="demo-request-form">
+          <div class="form-group">
+            <label class="form-label">Your Name *</label>
+            <input type="text" class="form-control" placeholder="Alex Morgan" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Company / Agency Name *</label>
+            <input type="text" class="form-control" placeholder="Apex Travel Network" required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label class="form-label">Email *</label>
+              <input type="email" class="form-control" placeholder="alex@agency.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-control" placeholder="+91 9717 1839 34" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred Date & Time for Demo</label>
+            <input type="datetime-local" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary btn-glow" style="width: 100%; margin-top: 8px;">
+            <i class="fas fa-calendar-check"></i> Confirm Demo Booking
+          </button>
+        </form>
+
+        <div id="modal-success-msg" style="display: none; text-align: center; padding: 20px 0;">
+          <div
+            style="width: 60px; height: 60px; border-radius: 50%; background: #dcfce7; color: #16a34a; font-size: 1.8rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">
+            <i class="fas fa-check"></i>
+          </div>
+          <h3 style="color: var(--text-heading); margin-bottom: 8px;">Demo Request Received!</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Our Lead Solutions Architect has been notified. We have emailed you the calendar invite and sandbox login credentials.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER (DARK VERSION) -->
+  <footer class="site-footer">
+    <div class="footer-ambient-glow"></div>
+    <div class="container container-wide">
+      <div class="footer-grid">
+
+        <!-- Col 1: Brand Info -->
+        <div>
+          <div class="footer-logo-box">
+            <img src="assets/images/logo.png" alt="AethercodeTech Logo" class="footer-brand-logo">
+          </div>
+          <p class="footer-about">
+            AethercodeTech Pvt. Ltd. is a premier travel technology SaaS company dedicated to transforming the global travel ecosystem with unified booking engines, APIs & white-label portals. <em>"Making Technology Accessible to All."</em>
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Solutions -->
+        <div>
+          <h4 class="footer-heading">Solutions</h4>
+          <ul class="footer-link-list">
+            <li class="footer-link-item"><a href="services.html#tab-b2b"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> B2B Travel Portal</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-b2c"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> B2C Booking Engine</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-api"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> Travel API Integration</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-sbt"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> Corporate SBT / OBT</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-whitelabel"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> White Label Solutions</a></li>
+            <li class="footer-link-item"><a href="services.html#tab-mobile"><i class="fas fa-chevron-right text-primary me-1" style="font-size: 0.7rem;"></i> Mobile Apps & Cloud</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Our Products -->
+        <div>
+          <h4 class="footer-heading">Our Products</h4>
+          <ul class="footer-link-list">
+            <li class="footer-link-item"><a href="products.html#tab-flight"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Flight Booking Engine</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-hotel"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Hotel Booking System</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-tours"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Tour & Holiday Packages</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-insurance"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Travel Insurance Engine</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-cabs"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Cab & Airport Transfers</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-bus"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Intercity Bus Booking</a></li>
+            <li class="footer-link-item"><a href="products.html#tab-visa"><i class="fas fa-chevron-right text-info me-1" style="font-size: 0.7rem;"></i> Visa Processing System</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quick Links -->
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-link-list">
+            <li class="footer-link-item"><a href="landing.html"><i class="fas fa-chevron-right text-warning me-1" style="font-size: 0.7rem;"></i> Landing Page</a></li>
+            <li class="footer-link-item"><a href="about.html"><i class="fas fa-chevron-right text-warning me-1" style="font-size: 0.7rem;"></i> About Us</a></li>
+            <li class="footer-link-item"><a href="index.html#architecture"><i class="fas fa-chevron-right text-warning me-1" style="font-size: 0.7rem;"></i> Cloud Architecture</a></li>
+            <li class="footer-link-item"><a href="index.html#api-sandbox"><i class="fas fa-chevron-right text-warning me-1" style="font-size: 0.7rem;"></i> API Sandbox</a></li>
+            <li class="footer-link-item"><a href="index.html#testimonials"><i class="fas fa-chevron-right text-warning me-1" style="font-size: 0.7rem;"></i> Case Studies</a></li>
+            <li class="footer-link-item"><a href="contact.html"><i class="fas fa-chevron-right text-warning me-1" style="font-size: 0.7rem;"></i> Contact Us</a></li>
+            <li class="footer-link-item"><a href="about.html"><i class="fas fa-chevron-right text-warning me-1" style="font-size: 0.7rem;"></i> Security & Compliance</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact Info -->
+        <div>
+          <h4 class="footer-heading">Get in Touch</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Tech Boulevard, New Delhi, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span><a href="tel:+919717183934" style="color: inherit; text-decoration: none;">+91 9717 1839 34</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span><a href="mailto:Prabir@aethercodetech.com" style="color: inherit; text-decoration: none;">Prabir@aethercodetech.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon - Sat: 9:30 AM - 7:00 PM IST</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-shield-alt text-success"></i>
+            <span style="color: #34d399; font-size: 0.85rem;">99.99% Uptime SLA Guarantee</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 AethercodeTech Pvt. Ltd. All rights reserved. <em>"Making Technology Accessible to All."</em>
+        </div>
+        <div class="footer-bottom-legal-links">
+          <a href="#">Terms of Service</a>
+          <a href="about.html">Security Standards</a>
+          <a href="contact.html">API SLA</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle & AOS & Custom Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
